@@ -1,18 +1,40 @@
 {
-  "name": "outer-bohr",
+  "name": "squoosh-batch",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "optimize": "./optimize-images.sh raw",
-    "compress": "./optimize-images.sh raw"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "@squoosh/cli": "^0.7.1"
+    "@jsquash/avif": "^2.1.1",
+    "@jsquash/jpeg": "^1.6.0",
+    "@jsquash/oxipng": "^2.3.0",
+    "@jsquash/png": "^3.1.1",
+    "@jsquash/resize": "^2.1.1",
+    "@jsquash/webp": "^1.5.0",
+    "@vueuse/core": "^14.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "lucide-vue-next": "^0.562.0",
+    "nuxt": "^3.16.0",
+    "reka-ui": "^2.7.0",
+    "shadcn-nuxt": "^2.4.3",
+    "tailwind-merge": "^3.4.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^2.3.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/file-saver": "^2.0.7",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.7.3"
   }
 }

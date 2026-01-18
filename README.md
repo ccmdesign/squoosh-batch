@@ -1,1 +1,0 @@
-# squoosh-batch
